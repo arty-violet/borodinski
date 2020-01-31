@@ -1,0 +1,109 @@
+
+.filter {
+	width: 200px;
+}
+
+.filter__fieldset {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+	border: none;
+}
+
+.filter__legend {
+  margin-bottom: 20px;
+  padding: 0;
+
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  
+	list-style: none;
+	line-height: 18px;
+}
+
+.filter__item {
+  position: relative;
+
+  padding: 9.5px 0;
+  padding-left: 45px;
+}
+
+.filter__label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter__input:hover + .filter__label,
+.filter__input:focus + .filter__label {
+	color: #663d15;
+}
+
+.filter__input:disabled + .filter__label {
+	color: #000000;
+	
+	opacity: 0.5;
+}
+
+.filter__input--checkbox + .filter__label::before {
+  content: "";
+
+  position: absolute;
+
+  top: 8px;
+  left: 0px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000000;
+}
+
+.filter__input--checkbox:checked + .filter__label::after {
+  content: "";
+
+  position: absolute;
+
+  top: 12px;
+  left: 4px;
+
+  width: 12px;
+  height: 12px;
+  
+  background-image: url("img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter__input--radio + .filter__label::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 0px;
+
+  width: 16px;
+  height: 16px;
+  
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.filter__input--radio:checked + .filter__label::after {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 6px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  border-radius: 50%;
+}

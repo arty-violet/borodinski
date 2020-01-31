@@ -1,0 +1,42 @@
+
+@import url(logo/logo.css);
+@import url(nav-menu/nav-menu.css);
+@import url(site-nav/site-nav.css);
+@import url(user-nav/user-nav.css);
+@import url(login/login.css);
+
+
+.header {
+  margin-bottom: 70px;
+}
+
+.header--inner-page {
+  margin-bottom: 50px;
+  
+	background-color: #000000;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 285px;
+	
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	
+	background-color: #000000;
+	background-color: transparent;
+}
+
+.header__nav--inner-page {
+  flex-direction: row;
+  justify-content: flex-start;
+	align-items: flex-start;
+	width: 940px;
+  min-height: 72px;
+	margin: 0 auto;
+	padding: 0 10px;
+}

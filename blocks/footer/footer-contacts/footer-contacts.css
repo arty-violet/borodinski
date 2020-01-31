@@ -1,0 +1,20 @@
+
+.footer-contacts {
+	width: 320px;
+	margin: 0;
+	margin-right: 80px;
+}
+
+.footer-contacts__info {
+	margin: 0;
+}
+
+.footer-contacts__map-link {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
+	text-decoration: none;
+}

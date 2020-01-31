@@ -1,0 +1,15 @@
+
+@import url(features/features.css);
+@import url(content-block/content-block.css);
+@import url(news/news.css);
+@import url(gallery/gallery.css);
+@import url(contacts/contacts.css);
+@import url(appointment/appointment.css);
+@import url(map/map.css);
+
+
+.main-content {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}

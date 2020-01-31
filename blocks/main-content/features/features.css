@@ -1,0 +1,48 @@
+
+.features {
+	margin-bottom: 80px;
+}
+
+.features__list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.features__item {
+	width: 300px;
+	text-align: center;
+}
+
+.features__title {
+	position: relative;
+	
+	margin: 0;
+	margin-bottom: 60px;
+	
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.features__title::after {
+	content: "";
+	
+	position: absolute;
+	bottom: -33px;
+	left: 50%;
+	
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	
+	background-color: #ffffff;
+	
+	transform: rotate(45deg);
+}
+
+.features__slogan {
+	margin: 0 10px;
+}

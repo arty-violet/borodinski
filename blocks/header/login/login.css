@@ -1,0 +1,174 @@
+
+.login {
+	top: 120px;
+	left: 50%;
+	
+	display: none;
+
+	width: 300px;
+	margin-left: -230px;
+	padding: 50px 80px;
+}
+
+.login__title {	
+	margin: 0;
+	margin-bottom: 20px;
+
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.login__tip {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.login__area {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.login__input-user,
+.login__input-password {
+	box-sizing: border-box;
+	width: 300px;
+	padding: 10px 15px;
+	padding-right: 40px;
+
+	font: inherit;
+	color: #000000;
+	text-transform: uppercase;
+	
+	background-color: #f9f6f3;
+	border: 2px solid #000000;
+}
+
+.login__input-user:focus,
+.login__input-password:focus {
+	border-color: #663d15;
+	outline: none;
+}
+
+.login__icon-user {
+	background-image: url(img/user.svg);
+	background-position: 270px center;
+	background-repeat: no-repeat;
+}
+
+.login__icon-password {
+	background-image: url(img/lock.svg);
+	background-position: 270px center;
+	background-repeat: no-repeat;
+}
+
+.login__storage {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 15px 0;
+}
+
+.login__storage-label {
+	position: relative;
+	
+	padding-left: 30px;
+	
+	cursor: pointer;
+}
+
+.login__storage-label:hover,
+.login__storage-label:focus {
+	color: #663d15;
+}
+
+.login__hidden-checkbox + .login__shown-checkbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 17px;
+	height: 17px;
+	
+	border: 2px solid #000000;
+}
+
+.login__hidden-checkbox:focus + .login__shown-checkbox {
+	border-color: #663d15;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login__hidden-checkbox:checked + .login__shown-checkbox::before,
+.login__hidden-checkbox:checked + .login__shown-checkbox::after {
+	content: "";
+	
+	position: absolute;
+	top: 8px;
+	left: 1px;
+
+	width: 15px;
+	height: 2px;
+
+	background-color: #000000;
+}
+
+.login__hidden-checkbox:checked + .login__shown-checkbox::before {
+transform: rotate(45deg);
+}
+
+.login__hidden-checkbox:checked + .login__shown-checkbox::after {
+	transform: rotate(-45deg);
+
+}
+.login__restore-link {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.login__restore-link:hover,
+.login__restore-link:focus {
+	text-decoration: none;
+}
+
+.login__enter-button {
+	width: 100%;
+	margin-right: 0;
+}
+
+.login__close-button {
+	position: absolute;
+	top: 0;
+	right: -34px;
+
+	width: 22px;
+	height: 22px;
+
+	font-size: 0;
+
+	background-color: transparent;
+	border: 0;
+
+	cursor: pointer;
+}
+
+.login__close-button::before, 
+.login__close-button::after {
+	content: "";
+	
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	
+	width: 19px;
+	height: 3px;
+
+	background-color: #d0d0d0;
+}
+
+.login__close-button::before{
+	transform: rotate(45deg);
+}
+
+.login__close-button::after {
+	transform: rotate(-45deg);
+}

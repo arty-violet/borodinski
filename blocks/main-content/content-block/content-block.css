@@ -1,0 +1,18 @@
+
+.content-block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+	padding: 45px 80px;
+	padding-bottom: 50px;
+
+	color: #000000;
+	
+	background-color: #f8f5f2;
+	background-image: 
+		url(img/line.png),
+		url("img/light-background.jpg");
+	background-position: center, 0 0;
+	background-repeat: no-repeat, repeat;	
+}
+ 

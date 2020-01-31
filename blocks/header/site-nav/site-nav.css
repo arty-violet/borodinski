@@ -1,0 +1,38 @@
+
+.site-nav__list  {
+	display: flex;
+	flex-wrap: wrap;
+	width: 620px;
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav__link{
+	display: block;
+	padding: 25px 20px;
+
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+	background-color: #242424;
+}
+
+.site-nav__link--current {
+  position: relative;
+}
+
+.site-nav__link--current::after {
+  content: "";
+
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+
+  height: 5px;
+
+  background-color: #ffffff;
+}

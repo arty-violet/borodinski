@@ -1,0 +1,44 @@
+
+@import url(../blocks/visually-hidden/visually-hidden.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/main-content/main-content.css);
+@import url(../blocks/inner-content/inner-content.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/modal/modal.css);
+
+
+/*common properties*/
+
+* {
+	/* outline: 1px dashed red; */
+}
+
+body {
+	font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+
+	background-color: #000000;
+	background-image: url("../img/index-background.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.inner-page {
+	color: #000000;
+
+	background-color: #f9f6f3;
+	background-image: url("../img/light-background.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+

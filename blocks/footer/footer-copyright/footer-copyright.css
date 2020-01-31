@@ -1,0 +1,25 @@
+
+.footer-copyright {
+	width: 140px;
+  margin: 0;
+	margin-left: auto;
+	
+	text-align: center;
+}
+
+.footer-copyright__headline {
+  display: block;
+	margin-bottom: 15px;
+}
+
+.footer-copyright__button {
+  display: block;
+  padding: 10px 15px;
+}
+
+.footer-copyright__button:hover,
+.footer-copyright__button:focus {
+	color: #000000;
+	
+	background-color: #ffffff;
+} 

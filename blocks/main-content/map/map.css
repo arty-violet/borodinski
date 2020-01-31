@@ -1,0 +1,52 @@
+
+.map {
+	top: 50%;
+	left: 50%;
+
+	display: none;
+
+	width: 766px;
+	height: 560px;
+	margin-top: -280px;
+	margin-left: -390px;
+	
+	border: 7px solid #ffffff;
+}
+
+.map__close-button {
+	position: absolute;
+	top: 0;
+	right: -34px;
+
+	width: 22px;
+	height: 22px;
+
+	font-size: 0;
+
+	background-color: transparent;
+	border: 0;
+
+	cursor: pointer;
+}
+
+.map__close-button::before,
+.map__close-button::after {
+	content: "";
+	
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	
+	width: 19px;
+	height: 3px;
+
+	background-color: #d0d0d0;
+}
+
+.map__close-button::before {
+	transform: rotate(45deg);
+}
+
+.map__close-button::after {
+	transform: rotate(-45deg);
+}

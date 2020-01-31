@@ -1,0 +1,49 @@
+
+.user-nav__list  {
+	display: flex;
+	max-width: 140px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.user-nav__link {
+	position: relative;
+	
+	display: block;
+	padding: 25px 20px;
+	padding-left: 50px;
+
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+.user-nav__link:hover,
+.user-nav__link:focus {
+	background-color: #242424;
+}
+
+.user-nav__link::before {
+	content: "";
+
+	position: absolute;
+	top: 27px;
+	left: 20px;
+
+	width: 16px;
+	height: 18px;
+	
+	background-image: url(img/login.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	opacity: 0.3;
+}
+
+.user-nav__link:hover::before,
+.user-nav__link:focus::before,
+.user-nav__link:active::before {
+	opacity: 1;
+}
+

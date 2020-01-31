@@ -1,0 +1,47 @@
+
+.gallery {
+	width: 300px;
+}
+
+.gallery__title {	
+	margin: 0;
+	margin-bottom: 20px;
+
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.gallery__container {
+	position: relative;
+	height: 260px;
+}
+
+.gallery__content {
+	height: 164px;
+	margin: 0;
+	
+	background-color: #cccccc;
+	border: 7px solid #ffffff;
+}
+
+.gallery__img {
+	width: 286px;
+	height: 164px;
+}
+
+.gallery__button {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+
+  width: 140px;
+  margin: 0;
+}
+
+.gallery__button--back {
+	left: 0;
+}
+
+.gallery__button--next {
+	right: 0;
+}

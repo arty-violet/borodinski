@@ -1,0 +1,39 @@
+
+.breadcrumbs {
+	display: flex;
+	
+	list-style: none
+}
+
+.breadcrumbs__link {
+  position: relative;
+  
+	display: block;
+  margin-right: 40px;
+
+	color: #000000;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus {
+	text-decoration: underline;
+}
+
+.breadcrumbs__link::after {
+  content: "";
+  
+  position: absolute;
+  top: 8px;
+  right: -24px;
+  
+  width: 8px;
+  height: 8px;
+  
+  background-color: #000000;
+  
+  transform: rotate(45deg);
+}
+
+.breadcrumbs__current {
+	color: #aba9a7;
+}

@@ -1,0 +1,27 @@
+
+@import url(breadcrumbs/breadcrumbs.css);
+@import url(catalog-columns/catalog-columns.css);
+@import url(filters/filters.css);
+@import url(catalog/catalog.css);
+@import url(pagination/pagination.css);
+@import url(product-photo/product-photo.css);
+@import url(product-info/product-info.css);
+@import url(content/content.css);
+
+
+.inner-content {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.inner-content__title {
+	margin-bottom: 15px;
+
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.inner-content__breadcrumbs {
+  margin-bottom: 45px;
+}

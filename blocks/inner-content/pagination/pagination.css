@@ -1,0 +1,41 @@
+
+.pagination__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.pagination__link {
+	display: block;
+	width: 43px;
+	height: 43px;
+	margin-right: 7px;
+
+	line-height: 43px;
+	text-align: center;
+	color: #ffffff;
+	
+	background-color: #000000;
+}
+
+.pagination__link:hover,
+.pagination__link:focus,
+.pagination__link:active {
+	background-color: #663d15;
+}
+
+.pagination__link--curent {
+	color: #000000;
+	
+	background-color: #ffffff;	
+}
+
+.pagination__link--curent:hover,
+.pagination__link--curent:focus,
+.pagination__link--curent:active {
+	color: #000000;
+	
+	background-color: #ffffff;	
+}
