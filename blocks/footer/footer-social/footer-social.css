@@ -22,7 +22,7 @@
 	list-style: none;
 }	
 
-.footer-social__button {
+.footer-social__link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -32,12 +32,12 @@
 	background-color: #000000;
 }
 
-.footer-social__button:hover,
-.footer-social__button:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
 	background-color: #ffffff;
 }
 
-.footer-social__button:hover .footer-social__svg-path,
-.footer-social__button:focus .footer-social__svg-path {
+.footer-social__link:hover .footer-social__svg-path,
+.footer-social__link:focus .footer-social__svg-path {
 	fill: #000000;
 }
