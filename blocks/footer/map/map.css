@@ -13,6 +13,10 @@
 	border: 7px solid #ffffff;
 }
 
+.map__iframe {
+  border: 0;
+}
+
 .map__close-button {
 	position: absolute;
 	top: 0;
