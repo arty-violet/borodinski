@@ -31,6 +31,11 @@
   padding: 0px 10px;
   padding-top: 60px;
   padding-bottom: 35px;
+  
+	background-color: #212121;
+	background-image: url("img/dark-background.jpg");
+	background-position: 0 0;
+  background-repeat: repeat;	
 }
 
 .footer__container--inner-page {
