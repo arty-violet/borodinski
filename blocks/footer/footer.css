@@ -14,11 +14,12 @@
 }
 
 .footer--inner-page {
+  min-height: 14vh;
   box-shadow: inset 0px 30px 15px -10px #0f0f0f;
 }
 
 .footer--content-page {
-  margin-top: 80px;
+  margin-top: 0px;
   
   box-shadow: inset 0px 30px 15px -10px #0f0f0f;
 }
@@ -39,7 +40,7 @@
 }
 
 .footer__container--inner-page {
-  margin-top: 50px;
+  margin-top: 0px;
   padding: 0px 10px;
   padding-top: 55px;
   padding-bottom: 35px;

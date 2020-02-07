@@ -10,9 +10,10 @@
 
 
 .inner-content {
-	width: 940px;
+  width: 940px;
+  min-height: calc(80.5vh - 100px);
 	margin: 0 auto;
-	padding: 0 10px;
+  padding: 50px 10px;
 }
 
 .inner-content__title {

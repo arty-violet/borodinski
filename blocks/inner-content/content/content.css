@@ -38,6 +38,7 @@
   flex-wrap: wrap;
   
   margin: 55px 0;
+  margin-bottom: 0;
 }
 
 .content__column-left,
