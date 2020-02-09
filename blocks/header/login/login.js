@@ -19,7 +19,7 @@ try {
 
 loginLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  loginPopup.classList.add("modal--show");
+  loginPopup.classList.add("modal--animation-show");
   overlay.classList.add("modal__overlay--show");
 
   if (loginStorage) {
@@ -30,36 +30,47 @@ loginLink.addEventListener("click", function (evt) {
   }
 });
 
-loginClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  loginPopup.classList.remove("modal--show");
-  loginPopup.classList.remove("modal--error");
-  overlay.classList.remove("modal__overlay--show");
-});
-
 loginForm.addEventListener("submit", function (evt) {
   if (!inputLogin.value || !inputPassword.value) {
     evt.preventDefault();
     loginPopup.classList.add("modal--error");
-    overlay.classList.add("modal__overlay--show");
-} else {
-    evt.preventDefault();
-    loginPopup.classList.remove("modal--show");
-    overlay.classList.remove("modal__overlay--show");
 
+    setTimeout(function() {
+      loginPopup.classList.remove("modal--error");
+      loginPopup.classList.remove("modal--animation-show");
+      loginPopup.classList.add("modal--static-show");
+    }, 600);
+    
+  } else {
+    evt.preventDefault();
+    loginPopup.classList.remove("modal--animation-show");
+    loginPopup.classList.remove("modal--static-show");
+    overlay.classList.remove("modal__overlay--show");
+    
     if (isStorageSupport) {
       localStorage.setItem("inputLogin", inputLogin.value);
     }
   }
 });
 
+loginClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  loginPopup.classList.remove("modal--animation-show");
+  loginPopup.classList.remove("modal--static-show");
+  overlay.classList.remove("modal__overlay--show");
+});
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
   evt.preventDefault();
 
-    if (loginPopup.classList.contains("modal--show")) {
-      loginPopup.classList.remove("modal--show");
-      loginPopup.classList.remove("modal--error");
+    if (loginPopup.classList.contains("modal--animation-show")) {
+      loginPopup.classList.remove("modal--animation-show");
+      overlay.classList.remove("modal__overlay--show");
+    }
+
+    if (loginPopup.classList.contains("modal--static-show")) {
+      loginPopup.classList.remove("modal--static-show");
       overlay.classList.remove("modal__overlay--show");
     }
   }
