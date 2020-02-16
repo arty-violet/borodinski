@@ -1,11 +1,11 @@
 
-@import url(../blocks/visually-hidden/visually-hidden.css);
-@import url(../blocks/button/button.css);
-@import url(../blocks/header/header.css);
-@import url(../blocks/main-content/main-content.css);
-@import url(../blocks/inner-content/inner-content.css);
-@import url(../blocks/footer/footer.css);
-@import url(../blocks/modal/modal.css);
+@import url(blocks/visually-hidden/visually-hidden.css);
+@import url(blocks/button/button.css);
+@import url(blocks/header/header.css);
+@import url(blocks/main-content/main-content.css);
+@import url(blocks/inner-content/inner-content.css);
+@import url(blocks/footer/footer.css);
+@import url(blocks/modal/modal.css);
 
 
 /*common properties*/

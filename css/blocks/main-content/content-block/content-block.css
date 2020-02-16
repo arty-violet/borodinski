@@ -10,8 +10,8 @@
 	
 	background-color: #f8f5f2;
 	background-image: 
-		url(img/line.png),
-		url("img/light-background.jpg");
+		url(../../../../img/content-block/line.png),
+		url("../../../../img/content-block/light-background.jpg");
 	background-position: center, 0 0;
 	background-repeat: no-repeat, repeat;	
 }

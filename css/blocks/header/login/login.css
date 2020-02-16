@@ -50,13 +50,13 @@
 }
 
 .login__icon-user {
-	background-image: url(img/user.svg);
+	background-image: url(../../../../img/login/user.svg);
 	background-position: 270px center;
 	background-repeat: no-repeat;
 }
 
 .login__icon-password {
-	background-image: url(img/lock.svg);
+	background-image: url(../../../../img/login/lock.svg);
 	background-position: 270px center;
 	background-repeat: no-repeat;
 }
